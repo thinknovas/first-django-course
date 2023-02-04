@@ -14,9 +14,10 @@
         <script src="" async defer></script>
         <ul>
             {% for movie in movies %}
-                <li>{{movie.title}}</li>
+                <li><a href={{movie.id}}>{{movie.title}}</a></li>
             {% endfor %}
             </ul>
+            <a href='/movies/add'>Add a Movie</a>
     </body>
 
 </html>
